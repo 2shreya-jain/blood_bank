@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+color:red;
+text-align:center;
+}
+
+body{
+      background-color:whitesmoke;
+      height: 100vh;
+      background-position: center;
+      background-size: cover ;
+    }
+
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 30px; ;
+}    
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black ;
+}
+.main{
+    max-width: 1300px;
+  text-align: center;
+  padding: 0.5px 24px;
+  text-decoration: none;
+  font-size: 17px;
+  overflow: hidden;
+  background-color:#ee333398;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  box-shadow: 2px 5px 10px #888888;
+}
+.button{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 2px solid brown;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: brown;
+    color: white ;
+    transition: 0.5s ease;
+}
+.nspimg center src{
+    display: table-cell;
+    height: 100px;
+    text-align: center;
+    width: 150px;
+    vertical-align: middle;
+    
+}
+.box{
+
+  width: 900px;
+  height: 350px;
+  padding: 15px;
+  box-shadow: 10px 10px 10px rgb(245, 232, 232);
+  
+}
+.box img{
+    border: 3px solid #555;
+}
+
+
+.bg{
+    width:100%;
+    height:300px;
+
+}
+#bloodgroup {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){background-color: #dbd8d8;}
+
+tr:hover {background-color: white;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(202, 42, 42);
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body background="https://wonderfulengineering.com/wp-content/uploads/2016/02/red-wallpaper-10.jpg" >
+    
+<header class="navbar">
+    <div class="main">
+        <ul>
+            <li><a href="http://localhost/home.html">Home</a></li>
+            <li><a href="http://localhost/Data_display.php">View Request</a></li>
+            <li><a href="http://localhost/Contact_Us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <br><br><br><br><br>
+</header>    
+
+
+
+    <h1 class="heading"><center>"Welcome to online Blood Bank Management System"</center></h1>
+        
+    <div class="button">
+        <a href="http://localhost/donorlogin.php" class="btn"><b>Donor</b></a>
+        <a href ="http://localhost/patient_login.php" class="btn"><b>Patient</b></a>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="nspimg" style="padding-left:400px">
+        <img src="data:image/png;base64,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" style="height: 200px; width: 470px;"  class="center" >
+    </div><br><br><br>
+    <center>
+    <table id="bloodgroup">
+        <tr>
+          <th>Blood Type</th>
+          <th>Donate Blood To</th>
+          <th>Receive Blood From</th>
+        </tr>
+        <tr>
+          <td>A+</td>
+          <td>A+  AB+</td>
+          <td>A+  A-  O+  O-</td>
+        </tr>
+        <tr>
+          <td>O+</td>
+          <td>O+  A+  B+  AB+</td>
+          <td>O+ O-</td>
+        </tr>
+        <tr>
+          <td>B+</td>
+          <td>B+ AB+</td>
+          <td>B+ B- O+ O-</td>
+        </tr>
+        <tr>
+          <td>AB+</td>
+          <td>AB+</td>
+          <td>Universal recipients</td>
+        </tr>
+        <tr>
+          <td>A-</td>
+          <td>A+ A- AB+ AB-</td>
+          <td>A- O-</td>
+        </tr>
+        <tr>
+          <td>O-</td>
+          <td>Everyone</td>
+          <td>O-</td>
+        </tr>
+        <tr>
+          <td>B-</td>
+          <td>B+ B- AB+ AB-</td>
+          <td>B- O-</td>
+        </tr>
+        <tr>
+          <td>AB-</td>
+          <td>AB+ AB-</td>
+          <td>AB- A- B- O-</td>
+        </tr>
+        
+      </table></center>
+    <br><br>
+    <center>
+    <div class="box">
+        <h1 style="color: hsl(76, 91%, 43%);" ><i><u>Why Should I Give Blood?</u></i></h1><br><div style="padding-left: 5px;">
+        <br><img align="right" src="https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/06/GettyImages-465489053_header-1024x575.jpg?w=1155&h=1528" style="height: 220px; width: 450px;" />
+        <p>
+            <h3 style ="color: white;" align="left">1. Blood is always needed for treatment of accident victims, cancer patients,<br> hemophiliacs and surgery patients. 
+                Blood cannot be manufactured.
+            <br><br> 2. Blood is needed every two seconds. About one in seven people entering a <br>hospital needs blood.
+            
+           <br> <br>3. Only 37 percent of our country's population is eligible to give blood, and     <br>less than 10 percent of those who can donate actually do donate annually.</h3></p>
+    </div></div><br><br><br>
+    <div class="box">
+        <h1 style="color: hsl(76, 91%, 43%);"><i><u>Can I Give Blood</u></i></h1><br>
+        <br><img align="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykeFPgsgFBkhjObuqeBf0bUUXJibcDhOpiA&usqp=CAU" style="height: 250px; width: 450px;">
+        <p > <h3 style ="color: white;" align="left" > 1. Be in good general health and feeling well.<br><br>
+            2. Be at least 17 years old in most states (16 years old with parental consent in some states).<br><br>
+            3. Weigh at least 110 pounds.<br><br>4. Additional weight requirements apply for donors 18 years old and younger and all high school donors.<br><br>
+           5. Have not donated blood in the last 56 days.</h3></p>
+    </div>
+    <br><br><br>
+    <div class="box">
+        <h1 style="color: hsl(76, 91%, 43%);" ><i><u>Common Concerns for First Time Blood Donors</u></i></h1>
+        <br><br><img align="right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcNjFVFZB2zTk21ry5Lz1BFpK0tO4EV335g&usqp=CAU" style="height: 200px; width: 450px;">
+        <br>
+        <p><h3 style ="color: white;" align="left">Afraid of needles?<br><br>
+            Is it safe to donate?<br><br>
+            Many people are reluctant to make their first blood donation, but once they do, they find the donation process to be easy and gratifying.</h3></p>
+    </div><br><br><br><br><br><br>
+</center>
+
+
+</body>
+</html>
